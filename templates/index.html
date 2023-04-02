@@ -102,6 +102,23 @@
                         <a href=""><button>Watch Now</button></a>
                     </article>
                 </div>
-            </section>    </main>
+            </section>   
+        </aside>
+        <aside id="right">
+            <form action="/submit" method='post' id="search_mov">
+                <p for="Search"><input type="search" name="nm" id="search_bar" placeholder="Search"></p>
+            </form>
+            <h5>Recommanded</h5>
+            <a href="">
+            {% for key,value in movie.items() %}
+            <section>
+                <div id="img" style="background: url(assets/recommand1.jpg) center center no-repeat;background-size:cover;"></div>
+                <div id="text">
+                    <h4>{{ value }}</h4>
+                    <h6>Action, Thriller</h6>
+                    <h6>2008</h6>
+                </div>
+            </section></a> 
+        </main>
 
 </html>
