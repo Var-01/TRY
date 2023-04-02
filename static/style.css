@@ -18,3 +18,16 @@ main{
     padding: 44px 52px;
     overflow-y: scroll;
 }
+
+#left::-webkit-scrollbar{
+    width: 5px;
+}
+#left::-webkit-scrollbar-track{
+    width: 5px;
+    background-color: transparent;
+}
+#left::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: #E81C61;
+    border-radius: 5px;
+}
