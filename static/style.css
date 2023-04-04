@@ -54,3 +54,20 @@ main{
     font-size: 40px;
     color: #E81C61;
 }
+
+#main-movie{
+    width: 100%;
+    height: 352px;
+    background: url("../assets/mainmovie.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 140px 0px 91px 69px;
+    margin-bottom: 44px;
+}
+
+#main-movie h2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #F8FAFF;
+}
