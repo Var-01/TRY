@@ -31,3 +31,26 @@ main{
     background: #E81C61;
     border-radius: 5px;
 }
+
+#left header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 27px;
+}
+
+#left header h2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #656565;
+}
+
+#left header h1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #E81C61;
+}
