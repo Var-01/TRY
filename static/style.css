@@ -96,3 +96,22 @@ main{
 a{
     text-decoration: none;
 }
+
+#main-movie #add{
+    padding: 0px 10px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #F8FAFF;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(213px);
+    
+}
+
+.movie{
+    margin-bottom: 60px;
+}
