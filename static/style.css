@@ -115,3 +115,32 @@ a{
 .movie{
     margin-bottom: 60px;
 }
+
+.movie p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #656565;
+    padding-bottom: 23px;
+
+}
+
+.movie div{
+    width: 100%;
+    display: flex;
+    
+}
+
+.movie div article{
+    width: 184px;
+    height: 253px;
+    margin-right: 34px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 15px;
+    justify-content: end;
+    position: relative;
+    margin-right: 34px;
+    
+}
