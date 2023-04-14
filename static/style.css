@@ -189,3 +189,18 @@ a{
     margin-left: 2px;
     border-left: 4px solid #F1F1F1;
 }
+
+#right p::after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(../assets/search.svg);
+    left: 12px;
+    top: 13px;
+}
+
+p{
+    position: relative;
+    padding-bottom: 41px;
+}
