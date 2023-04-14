@@ -227,3 +227,31 @@ input[type=search]{
     color: #656565;
     padding-bottom: 20px;
 }
+
+#right section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#img{
+    width: 55px;
+    height: 80px;
+    margin-right: 30px;
+}
+
+#text h4{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+#text h6{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;    
+    color: #595959;
+}
