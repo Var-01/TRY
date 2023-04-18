@@ -26,3 +26,11 @@ knn.fit(csr_data)
 # then we sort them based on their similarity distance and output top 5
 
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index1.html')
+
+@app.route('/movie/<string:name>')
+def movie(name):
+    return 'welcome %s' % name
