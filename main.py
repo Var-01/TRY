@@ -16,3 +16,13 @@ final_dataset.fillna(0, inplace = True)
 
 csr_data = csr_matrix(final_dataset.values)
 final_dataset.reset_index(inplace = True)
+
+knn = NearestNeighbors(metric = 'cosine', algorithm = 'brute', n_neighbors = 20, n_jobs = -1)
+knn.fit(csr_data)
+
+# recommendation algorithm function
+# check if movie name input is in database
+# if it exists in database, use recommendation system to find similar movies
+# then we sort them based on their similarity distance and output top 5
+
+app = Flask(__name__)
