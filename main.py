@@ -34,3 +34,15 @@ def index():
 @app.route('/movie/<string:name>')
 def movie(name):
     return 'welcome %s' % name
+
+def get_movie_recommendation(name):
+    movie_name=name.title()
+    n_movies_to_reccomend = 5
+    movie_list = movies[movies['title'].str.contains(movie_name)]
+    if len(movie_list):    # if there is a match
+        movie_idx = movie_list.iloc[0]['movieId']
+        movie_idx = final_dataset[final_dataset['movieId'] == movie_idx].index[0]
+        distances, indices = knn.kneighbors(csr_data[movie_idx], n_neighbors = n_movies_to_reccomend + 1)
+        rec_movie_indices = sorted(list(zip(indices.squeeze().tolist(), distances.squeeze().tolist())), key = lambda x: x[1])[:0:-1]
+        recommend_frame = []
+        
