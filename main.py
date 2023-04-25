@@ -58,3 +58,18 @@ def get_movie_recommendation(name):
         return render_template('index.html',movie=x)
     else:
         return "No movies found. Please try another movie!"
+
+@app.route('/submit',methods=['POST','GET'])
+def submit():
+    if request.method=='POST':
+        # science=float(request.form['science'])
+        # maths=float(request.form['maths'])
+        # c=float(request.form['c'])
+        # data_science=float(request.form['datascience'])
+        # total_score=(science+maths+c+data_science)/4
+        search=request.form['nm']
+
+    return redirect(url_for('get_movie_recommendation',name=search))
+
+if __name__ == '__main__':
+    app.run()
